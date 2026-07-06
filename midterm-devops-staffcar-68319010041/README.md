@@ -4,8 +4,7 @@
 **รหัสนักศึกษา:** 68319010041
 **รหัสโปรเจกต์:** `staffcar`
 
-![CI](https://github.com/<github-username>/midterm-devops-staffcar-68319010041/actions/workflows/ci.yml/badge.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![CI](https://github.com/supakprn/midterm-devops-staffcar-68319010041/actions/workflows/ci.yml/badge.svg)
 
 > ระบบบันทึกข้อมูลรถของบุคลากรวิทยาลัยเทคนิคเลย สำหรับเข้า-ออกวิทยาลัยต้องมีสติกเกอร์เท่านั้น
 > รองรับการบันทึก ทะเบียนรถ, ประเภท, ยี่ห้อ/รุ่น/สี, เจ้าของ/แผนก และสถานะสติกเกอร์
@@ -76,9 +75,9 @@ docker compose -f docker-compose.prod.yml up -d
 
 ## 🐳 Docker Hub
 
-- Backend image: `<dockerhub-username>/staffcar-api` (tags: `latest`, `v1.0.0`)
-- Frontend image: `<dockerhub-username>/staffcar-web` (tags: `latest`, `v1.0.0`)
-- Repository: https://hub.docker.com/r/<dockerhub-username>/staffcar-api
+- Backend image: `supakorn061049/staffcar-api` (tags: `latest`, `v1.0.0`)
+- Frontend image: `supakorn061049/staffcar-web` (tags: `latest`, `v1.0.0`)
+- Repository: https://hub.docker.com/r/supakorn061049/staffcar-api
 
 ## 🧪 การทดสอบ
 
