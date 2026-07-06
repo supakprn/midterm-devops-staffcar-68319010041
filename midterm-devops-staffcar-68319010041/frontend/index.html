@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ระบบบันทึกข้อมูลรถของบุคลากร (staffcar)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>🚗 ระบบบันทึกข้อมูลรถของบุคลากรวิทยาลัยเทคนิคเลย</h1>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2 id="form-title">เพิ่มข้อมูลรถ</h2>
+      <form id="car-form">
+        <input type="hidden" id="car-id" />
+
+        <label for="plate_no">ทะเบียนรถ</label>
+        <input type="text" id="plate_no" required placeholder="เช่น กข-1234" />
+
+        <label for="type">ประเภท</label>
+        <select id="type" required>
+          <option value="รถยนต์">รถยนต์</option>
+          <option value="จักรยานยนต์">จักรยานยนต์</option>
+        </select>
+
+        <label for="brand_model">ยี่ห้อ/รุ่น</label>
+        <input type="text" id="brand_model" placeholder="เช่น Toyota Vios" />
+
+        <label for="color">สี</label>
+        <input type="text" id="color" placeholder="เช่น ขาว" />
+
+        <label for="owner">ชื่อเจ้าของ</label>
+        <input type="text" id="owner" required placeholder="ชื่อ-นามสกุลเจ้าของรถ" />
+
+        <label for="department">แผนก</label>
+        <input type="text" id="department" placeholder="เช่น แผนกช่างไฟฟ้า" />
+
+        <label for="status">สถานะสติกเกอร์</label>
+        <select id="status">
+          <option value="รออก">รออก</option>
+          <option value="ออกแล้ว">ออกแล้ว</option>
+          <option value="หมดอายุ">หมดอายุ</option>
+        </select>
+
+        <div class="form-actions">
+          <button type="submit" id="submit-btn">บันทึก</button>
+          <button type="button" id="cancel-btn" style="display:none;">ยกเลิก</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>รายการรถทั้งหมด</h2>
+      <div id="status-message" class="status-message"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>ทะเบียนรถ</th>
+            <th>ประเภท</th>
+            <th>ยี่ห้อ/รุ่น</th>
+            <th>สี</th>
+            <th>เจ้าของ</th>
+            <th>แผนก</th>
+            <th>สถานะ</th>
+            <th>จัดการ</th>
+          </tr>
+        </thead>
+        <tbody id="car-table-body">
+          <!-- แถวข้อมูลถูกเติมโดย JavaScript -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>ศุภกรณ์ ศรีเขียว &middot; รหัสนักศึกษา 68319010041 &middot; โปรเจกต์ staffcar</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
