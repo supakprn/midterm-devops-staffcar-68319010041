@@ -22,7 +22,7 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
-
+# service สำหรับรัน Express API
   backend:
     build:
       context: ./backend

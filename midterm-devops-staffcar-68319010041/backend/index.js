@@ -1,6 +1,7 @@
 // index.js
 // Express API สำหรับระบบบันทึกข้อมูลรถของบุคลากร (staffcar)
 // ผู้จัดทำ: ศุภกรณ์ ศรีเขียว รหัสนักศึกษา 68319010041
+// อัปเดตล่าสุด: เพิ่มการทดสอบ CRUD API
 
 require("dotenv").config();
 const express = require("express");
