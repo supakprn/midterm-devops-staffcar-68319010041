@@ -94,3 +94,6 @@ npm test        # รัน unit tests ด้วย Jest + Supertest
 Workflow `.github/workflows/ci.yml` ทำงานตามลำดับ: **Lint → Test → Build**
 Trigger เมื่อ push ไปที่ `develop` / `feature/*` และเมื่อเปิด Pull Request เข้า `main`
 จัดทำโดย นักศึกษาวิทยาลัยเทคนิคเลย สาขาเทคโนโลยีสารสนเทศ
+## 👤 ผู้จัดทำ
+ศุภกรณ์ ศรีเขียว รหัสนักศึกษา 68319010041
+วิทยาลัยเทคนิคเลย
